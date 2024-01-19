@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="pic/pp2.jpg" alt=""></i>Leonard
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="pic/blog (1).png" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="index.html" class="nav_link sublink">Back to home</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Magic build</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="gallery.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Gallery</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="about.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">About</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="upload.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Upload new Blog</span>
+            </a>
+          </li>
+        </ul>
+       
+          
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+   
+    <html lang="en" dir="ltr">
+       <head>
+          <meta charset="utf-8">
+          <title>About card</title>
+         
+       </head>
+       <body>
+          <div class="blog-card">
+             <input type="radio" name="select" id="tap-1" checked>
+             <input type="radio" name="select" id="tap-2">
+             <input type="radio" name="select" id="tap-3">
+             <input type="checkbox" id="imgTap">
+             <div class="sliders">
+                <label for="tap-1" class="tap tap-1"></label>
+                <label for="tap-2" class="tap tap-2"></label>
+                <label for="tap-3" class="tap tap-3"></label>
+             </div>
+             <div class="inner-part">
+                <label for="imgTap" class="img">
+                <img class="img-1" src="pic/1.jpg">
+                </label>
+                <div class="content content-1">
+                   <span>Hello there!</span>
+                   <div class="title">
+                      John Leonard Arrogante
+                   </div>
+                   <div class="text">
+                     I'm a simple front-end developer , Aiming to be a master on developing a web.
+                   </div>
+                  
+                  
+                </div>
+             </div>
+             <div class="inner-part">
+                <label for="imgTap" class="img">
+                <img class="img-2" src="pic/html-5.png">
+                </label>
+                <div class="content content-2">
+                   <span>Hello there!</span>
+                   <div class="title">
+                     HTML
+                   </div>
+                   <div class="text">
+                    HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                   </div>
+                   <button class="btn"> <a href="https://www.google.com/search?q=html+description&oq=html+desc&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTg1MThqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8"> Read more</a> </button>
+                </div>
+             </div>
+             <div class="inner-part">
+                <label for="imgTap" class="img">
+                <img class="img-3" src="pic/Screenshot 2023-12-14 124739.png">
+                </label>
+                <div class="content content-3">
+                   <span>Hello there!</span>
+                   <div class="title">
+                     CSS
+                   </div>
+                   <div class="text">
+                    Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+                   </div>
+                   <button class="btn"> <a href="https://www.google.com/search?q=css+description&sca_esv=591149029&ei=fA18ZfXaMIeC4-EPpL-K2AI&ved=0ahUKEwj1iLamgpGDAxUHwTgGHaSfAisQ4dUDCBA&uact=5&oq=css+description&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2NzcyBkZXNjcmlwdGlvbjIKEAAYgAQYigUYQzIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkiEKVCBHlj4IHADeAGQAQCYAWqgAaMCqgEDMi4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp"> Read more</a> </button>
+                </div>
+             </div>
+          </div>
+       </body>
+    </html>
+<script src="main.js"></script>

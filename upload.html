@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="pic/blog (1).png" alt=""></i>Leonard
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="pic/blog (1).png" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="index.html" class="nav_link sublink">Back to home</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Magic build</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="gallery.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Gallery</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="about.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">About</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="upload.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Upload new Blog</span>
+            </a>
+          </li>
+        </ul>
+       
+          
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Upload</title>
+  <style>
+    /* Your CSS styles here */
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    
+    
+
+   
+
+    button:hover {
+      background-color: #45a049;
+      transform: scale(0.75);
+    }
+
+    #uploadedBlogContainer {
+      margin-top: 20px;
+    }
+
+    .blogPost {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .blogPost h2 {
+      color: #333;
+    }
+
+    .blogPost p {
+      color: #666;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      #blogForm {
+        margin: 10px;
+      }
+    }
+
+
+
+/* Your existing CSS styles here */
+
+#blogForm {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      margin: 20px;
+    
+
+  /* ... your existing styles ... */
+}
+
+label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    
+  /* ... your existing styles ... */
+}
+
+input,
+textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    
+  /* ... your existing styles ... */
+}
+
+button { 
+      background-color: #218ed6;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.5s ease;
+    
+  /* ... your existing styles ... */
+}
+
+button:hover {
+      background-color: #3187e9;
+      transform: scale(0.75);
+    
+  /* ... your existing styles ... */
+}
+
+#uploadedBlogContainer {
+  margin-top: 50px;
+  transition: 0.5s ease;
+}
+
+#uploadedBlogContainer:hover{
+  transform: scale(0.75);
+}
+
+.blogPost {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blogPost h2 {
+  color: #333;
+}
+
+.blogPost p {
+  color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #blogForm {
+    margin: 10px;
+  }
+}
+
+/* Styles for the uploaded photo */
+.blogPost img {
+  max-width: 100%; /* Ensure the photo doesn't exceed the container width */
+  height: 50vh;    /* Maintain the aspect ratio */
+  margin-top: 30px; /* Adjust the margin as needed */
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <form id="blogForm">
+    <label for="blogTitle">Blog Title:</label>
+    <input type="text" id="blogTitle" required>
+    <label for="blogContent">Blog Content:</label>
+    <textarea id="blogContent" rows="4" cols="50" required></textarea>
+
+    <!-- Photo upload button -->
+    <label for="photoUpload">Upload Photo:</label>
+    <input type="file" id="photoUpload" accept="image/*">
+
+    <button type="button" onclick="uploadBlog()">Upload</button>
+  </form>
+
+  <div id="uploadedBlogContainer"></div>
+
+  
+</body>
+</html>
+
+
+  <script src="main.js"></script>
